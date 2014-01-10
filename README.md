@@ -30,27 +30,34 @@ This is an installer that sets up mining software for the Bitcoin network with s
 
 ## Pseudo-code
 
-	user-option: bfgminer | cgminer
-	 download latest miner
+	user-option: bfgminer || cgminer
+	 download miner
 	 install miner
 
 	user-info: bitcoin-address
 	 validate address
 
-	create setup file
+	user-option: run local p2pool
+	 download p2pool
+	 install p2pool
+	 user-option: install bitcoind
+	  generate rpc password
+	  set conf server=1
+	  suggest bootstrap.dat
+	 create p2pool conf
+
+	create miner conf
 	 insert pool info
 	  eligius
 	  p2pool
 	 add bitcoin-address
 
-	user-option: run local p2pool
-	 user-option: install bitcoind
-	  generate rpc password
-	  set conf server=1
-	  suggest bootstrap.dat
-
 	user-option: start-on-boot
 	 add registry entry
+	
+	start miner
+	start bitcoind
+	start p2pool
 
 ### Pools
 The criteria for pools is that they must:
