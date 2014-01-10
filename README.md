@@ -3,6 +3,8 @@ winning
 
 This is an installer that sets up mining software for the Bitcoin network with sane defaults, optionally installing Bitcoin and P2Pool locally.
 
+# Responsible Windows Mining Setup
+
 ## Tools
 
 ### Required
@@ -37,8 +39,8 @@ This is an installer that sets up mining software for the Bitcoin network with s
 
 	create setup file
 	 insert pool info
-	  [eligius](http://eligius.st)
-	  [p2pool](http://p2pool.in/)
+	  eligius
+	  p2pool
 	 add bitcoin-address
 
 	user-option: run local p2pool
@@ -49,6 +51,17 @@ This is an installer that sets up mining software for the Bitcoin network with s
 
 	user-option: start-on-boot
 	 add registry entry
+
+### Pools
+The criteria for pools is that they must:
+
+1. Not require registration (i.e. uses Bitcoin address for username)
+2. Be decentralized, or compatible with that principle (e.g. support [GBT](https://en.bitcoin.it/wiki/Getblocktemplate))
+
+Pools meeting those criteria include:
+
+* [eligius](http://eligius.st)
+* [p2pool](http://p2pool.in/)
 
 ## Enhancements
 
