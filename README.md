@@ -67,3 +67,5 @@ Pools meeting those criteria include:
 
 1. Automatic updates
 2. Important notifications
+3. Create links to stats page
+4. Enable browser management of mining
